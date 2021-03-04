@@ -13,6 +13,8 @@ jobs:
     name: My Second Job
     runs-on: ubuntu-18.04
     steps:
+    - name: checkout
+      uses: actions/checkout@main
     - name: build
       run: |
         mkdir build && cd build
