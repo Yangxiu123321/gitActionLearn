@@ -1,4 +1,4 @@
-name: Hello World
+name: base
 on: push
 jobs: 
   my_first_job:
