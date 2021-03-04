@@ -13,6 +13,10 @@ jobs:
     name: My Second Job
     runs-on: ubuntu-18.04
     steps:
+    - name: update
+      run: sudo apt-get update
+    - name: install OpenCV
+      run: sudo apt-get install libopencv-dev
     - name: checkout
       uses: actions/checkout@main
     - name: build
